@@ -145,6 +145,17 @@
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 
+    .project-img {
+      width: 100%;
+      max-width: 500px;  
+      max-height: 700px; /* 图片最大宽度，控制“不要太大” */
+      aspect-ratio: auto; /* 固定比例，你要改成 16/9 或 4/3 也行 */
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+    }
+
+
     
     iframe, video { width:100%; aspect-ratio:16/9; }
     audio { width:100%; }
@@ -236,6 +247,7 @@
       <img src="1.jpg" alt="Project Image" style="width:100%; height:auto; display:block;">
     </div>
   </div>
+
   <div class="section">
     <div class="media media-left">
       <h3>Showcase Video</h3>
@@ -249,7 +261,7 @@
 
   <!-- Project 2 -->
   <div class="section" id="p2">
-    <div class="text text-right">
+   <div class="text text-right">
       <h2>Project 2: Earth Online</h2>
       <p style="text-align: center; white-space: pre-line;">
         Earth Online is an audio-visual interaction project built with Max/MSP & Jitter.  
@@ -263,12 +275,9 @@
         MAX/MSP, Jitter, Arduino, CapCut,
       </p>
       <a href="https://drive.google.com/file/d/1OYVl60-C3N1rFBpWgOgotYF0HRRZ80zw/view?usp=drive_link" target="_blank" class="btn">Download Description</a>
-      <a href="https://drive.google.com/file/d/1L6jmppvba0mkb5XkCdWge3Ce6NnDhBid/view?usp=sharing" 
-        target="_blank" 
-        class="btn">Download Mood Board</a>
     </div>
-    <div class="media media-right">
-      <img src="2.jpg" alt="Project Image" style="width:100%; height:auto; display:block;">
+    <div class="media media-left" style="transform: scale(1.18); transform-origin: center;">
+      <img src="2.jpg" class="project-img">
     </div>
   </div>
 
@@ -299,9 +308,10 @@
       <a href="https://drive.google.com/file/d/1Q9cwaGnhNitMivNIfLpnGNnaDqaff7cO/view?usp=drive_link" target="_blank" class="btn">Download Description</a>
     </div>
     <div class="media media-right">
-      <img src="3.jpg" alt="Project Image" style="width:100%; height:auto; display:block;">
+      <img src="3.jpg" class="project-img">
     </div>
   </div>
+
   <div class="section">
     <div class="media media-left">
       <h3>Logic Pro Video</h3>
@@ -328,10 +338,11 @@
       </p>
       <a href="https://drive.google.com/file/d/1rTVnAQfPV8sUpWLF9nH2KZM2ruyQR1rB/view?usp=drive_link" target="_blank" class="btn">Download Description</a>
     </div>
-    <div class="media media-right">
-      <img src="4.jpg" alt="Project Image" style="width:100%; height:auto; display:block;">
+    <div class="media media-left">
+      <img src="4.jpg" class="project-img">
     </div>
   </div>
+
   <div class="section">
     <div class="media media-left">
       <h3>Showcase Video</h3>
@@ -359,9 +370,10 @@
       <a href="https://drive.google.com/file/d/1VfEz1jBkMQRcdUBdvfkSabSsu6lCbHBC/view?usp=drive_link" target="_blank" class="btn">Download Description</a>
     </div>
     <div class="media media-right">
-      <img src="5.jpg" alt="Project Image" style="width:100%; height:auto; display:block;">
+      <img src="5.jpg" class="project-img">
     </div>
   </div>
+
   <div class="section">
     <div class="media media-left">
       <h3>Showcase Video</h3>
@@ -390,10 +402,9 @@
       </p>
       <a href="https://drive.google.com/file/d/1pjOhtbBzkzDIcBRziMOBaH4dMS9f6HtD/view?usp=drive_link" target="_blank" class="btn">Download Description</a>
     </div>
-    <div class="media media-right">
-      <img src="6.jpg" alt="Project Image" style="width:100%; height:auto; display:block;">
+    <div class="media media-left">
+      <img src="6.jpg" class="project-img">
     </div>
-    <div class="media media-right placeholder">[Image Placeholder]</div>
   </div>
 
   <!-- Project 6 - Page 2 (Video centered, smaller) -->
@@ -431,9 +442,8 @@
       <a href="https://drive.google.com/file/d/1wfVn_69f7Y82zATH3uQv3hZurA3-YUM_/view?usp=drive_link" target="_blank" class="btn">Download Description</a>
     </div>
     <div class="media media-right">
-      <img src="7.jpg" alt="Project Image" style="width:100%; height:auto; display:block;">
+      <img src="7.jpg" class="project-img">
     </div>
-    <div class="media media-right placeholder">[Image Placeholder]</div>
   </div>
 
   <!-- Project 8 -->
@@ -441,31 +451,31 @@
   <div class="text text-left">
     <h2>Project 8: Melody Creator</h2>
     <p style="text-align: center; white-space: pre-line;">
-    This project was developed for an MIT Music Technology assignment.
+      This project was developed for an MIT Music Technology assignment.
 
-    While the framework and background music were provided by MIT,
+      While the framework and background music were provided by MIT,
 
-    I implemented the melody-generation rules, rhythmic logic, and algorithmic structure.
+      I implemented the melody-generation rules, rhythmic logic, and algorithmic structure.
 
-    The system generates melodic motifs and grooves by combining fixed chords with randomized rhythms.
+      The system generates melodic motifs and grooves by combining fixed chords with randomized rhythms.
 
-    - Specific Role:
-    Engineer
+      - Specific Role:
+      Engineer
 
-    - Technologies Used
-    Python.
+      - Technologies Used
+      Python.
     </p>
   </div>
 
-    <div class="media media-right">
-      <h3>Introduction & Showcase Video</h3>
-      <iframe 
-        src="https://www.youtube.com/embed/3K_YQ6cJ07g" 
-        frameborder="0" 
-        allowfullscreen>
-      </iframe>
-    </div>
+  <div class="media media-right">
+    <h3>Introduction & Showcase Video</h3>
+    <iframe 
+      src="https://www.youtube.com/embed/3K_YQ6cJ07g" 
+      frameborder="0" 
+      allowfullscreen>
+    </iframe>
   </div>
+</div>
 
 
 
