@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Tang's Portfolio</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Times New Roman", serif;
+      background: #fff;
+      color: #000;
+    }
+
+    /* FIXED HEADER */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px 10%;
+      border-bottom: 1px solid #000;
+      background: #fff;
+      z-index: 10;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    header nav {
+      font-size: 16px;
+      display: flex;
+      gap: 20px;
+      margin-left: 40px;
+      opacity: 0.6;
+      transition: 0.3s;
+      flex-wrap: wrap;
+    }
+
+    header nav a {
+      color: #000;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    /* UNIVERSAL SECTION STYLING */
+    .section {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 120px 10%;
+      border-bottom: 1px solid #000;
+      min-height: 80vh;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.8s ease;
+    }
+
+    /* REVEAL STATE */
+    .section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* INTRO SPECIAL */
+    #intro {
+      padding: 80px 10%;
+      min-height: auto;
+    }
+
+    .video {
+      width: 48%;
+      height: 300px;
+      background: #eee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #777;
+      font-size: 14px;
+    }
+
+    .text {
+      width: 48%;
+      padding-left: 40px;
+      line-height: 1.6;
+      font-size: 18px;
+    }
+
+    .placeholder {
+      margin-top: 20px;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px dashed #000;
+      text-align: center;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .section {
+        flex-direction: column;
+        text-align: left;
+      }
+      .video,
+      .text {
+        width: 100%;
+        padding-left: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div style="font-size:32px; font-weight:400;">Mi Tang's Portfolio</div>
+    <nav>
+      <a href="#s1">Project 1</a>
+      <a href="#s2">Project 2</a>
+      <a href="#s3">Project 3</a>
+      <a href="#s4">Project 4</a>
+      <a href="#s5">Project 5</a>
+      <a href="#s6">Project 6</a>
+      <a href="#s7">Project 7</a>
+      <a href="#s8">Project 8</a>
+    </nav>
+  </header>
+
+  <!-- SPACER -->
+  <div style="height:120px;"></div>
+
+  <!-- INTRO -->
+  <div class="section" id="intro" style="border-top:1px solid #000;">
+    <div class="text" style="max-width:700px;">
+      <h2>About Me</h2>
+      <p>[Write your short introduction here — minimalist, concise.]</p>
+      <a href="YOUR_GOOGLE_DRIVE_RESUME_LINK" target="_blank"
+         style="text-decoration:none; border-bottom:1px solid #000;">more...</a>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section" id="s1">
+    <div class="video">YouTube Link Placeholder</div>
+    <div class="text">
+      <h2>Project 1</h2>
+      <p>Brief description here.</p>
+      <div class="placeholder">Description / Code Placeholder</div>
+    </div>
+  </div>
+
+  <div class="section" id="s2">
+    <div class="video">YouTube Link Placeholder</div>
+    <div class="text">
+      <h2>Project 2</h2>
+      <p>Description here.</p>
+      <div class="placeholder">Description / Code Placeholder</div>
+    </div>
+  </div>
+
+  <div class="section" id="s3">
+    <div class="video">YouTube Link Placeholder</div>
+    <div class="text">
+      <h2>Project 3</h2>
+      <p>Description here.</p>
+      <div class="placeholder">Description / Code Placeholder</div>
+    </div>
+  </div>
+
+  <div class="section" id="s4">
+    <div class="video">YouTube Link Placeholder</div>
+    <div class="text">
+      <h2>Project 4</h2>
+      <p>Description here.</p>
+      <div class="placeholder">Description / Code Placeholder</div>
+    </div>
+  </div>
+
+  <div class="section" id="s5">
+    <div class="video">YouTube Link Placeholder</div>
+    <div class="text">
+      <h2>Project 5</h2>
+      <p>Description here.</p>
+      <div class="placeholder">Description / Code Placeholder</div>
+    </div>
+  </div>
+
+  <div class="section" id="s6">
+    <div class="video">YouTube Link Placeholder</div>
+    <div class="text">
+      <h2>Project 6</h2>
+      <p>Description here.</p>
+      <div class="placeholder">Description / Code Placeholder</div>
+    </div>
+  </div>
+
+  <div class="section" id="s7">
+    <div class="video">YouTube Link Placeholder</div>
+    <div class="text">
+      <h2>Project 7</h2>
+      <p>Description here.</p>
+      <div class="placeholder">Description / Code Placeholder</div>
+    </div>
+  </div>
+
+  <div class="section" id="s8">
+    <div class="video">YouTube Link Placeholder</div>
+    <div class="text">
+      <h2>Project 8</h2>
+      <p>Description here.</p>
+      <div class="placeholder">Description / Code Placeholder</div>
+    </div>
+  </div>
+
+  <script>
+    const sections = document.querySelectorAll(".section");
+
+    function reveal() {
+      const trigger = window.innerHeight * 0.85;
+      sections.forEach(sec => {
+        const top = sec.getBoundingClientRect().top;
+        if (top < trigger) sec.classList.add("visible");
+      });
+    }
+
+    window.addEventListener("scroll", reveal);
+    reveal();
+  </script>
+
+</body>
+</html>
